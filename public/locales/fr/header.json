@@ -1,0 +1,13 @@
+{
+  "Topic": "Sujet",
+  "Vue Cli": "Premiers pas avec les bases de Vue CLI",
+  "Vue Cli description": "Chef-d'œuvre de la communauté et des développeurs Vue, l'étoile montante ne doit jamais être sous-estimée.",
+  "NEXT.js": "Premiers pas avec les bases de NEXT.js",
+  "NEXT.js description": "Le framework React qui intègre SEO et SSG ,avoir l'intention d'être le plus fort",
+  "Leetcode": "Leetcode journal d'apprentissage",
+  "More": "Plus d'information",
+  "related resources": "Ressources associées",
+  "related resources description": "Ressources tierces et code utilisé dans les articles du site.",
+  "about": "À propos de moi",
+  "about description": "Informations sur moi et ce site."
+}

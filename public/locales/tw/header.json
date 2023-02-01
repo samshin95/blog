@@ -1,0 +1,14 @@
+{
+  "Topic": "專欄",
+  "Vue Cli": "Vue Cli 基本入門",
+  "company": "公司",
+  "Vue Cli description": "Vue 社群開發集大成 ，後起之秀不容小看。",
+  "NEXT.js": "NEXT.js 基本入門",
+  "NEXT.js description": "整合SEO與SSG的React框架 挑戰最強",
+  "Leetcode": "Leetcode 刷題日記",
+  "More": "更多",
+  "related resources": "相關資源",
+  "related resources description": "網站文章中使用的第三方資源和代碼。",
+  "about": "關於我",
+  "about description": "關於我以及這個網站的資訊。"
+}

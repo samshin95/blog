@@ -1,0 +1,14 @@
+{
+  "Topic": "Topic",
+  "Vue Cli": "Getting Started with Vue Cli Basics",
+  "company": "company",
+  "Vue Cli description": "The masterpiece of Vue community and developers , the rising star should never be underestimated.",
+  "NEXT.js": "Getting Started with NEXT.js Basics",
+  "NEXT.js description": "The React framework which integrate SEO and SSG ,intend being the strongest",
+  "Leetcode": "Leetcode learning diary",
+  "More": "More",
+  "related resources": "Related resources",
+  "related resources description": "Third-Party Resources and Code Used in Site Articles.",
+  "about": "About me",
+  "about description": "Information about me and this site."
+}

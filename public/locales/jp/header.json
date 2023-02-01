@@ -1,0 +1,13 @@
+{
+  "Topic": "トピック",
+  "Vue Cli": "Vue CLI の基本を使い始める",
+  "Vue Cli description": "Vue コミュニティと開発者の傑作である新星は決して過小評価されるべきではありません。",
+  "NEXT.js": "NEXT.js の基本を使い始める",
+  "NEXT.js description": "SEOとSSGを統合したReactフレームワーク ,最強になるつもり",
+  "Leetcode": "Leetcode 学習日記",
+  "More": "詳しくは",
+  "related resources": "関連リソース",
+  "related resources description": "サイトの記事で使用されるサードパーティのリソースとコード。",
+  "about": "私について",
+  "about description": "私とこのサイトに関する情報。"
+}

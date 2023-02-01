@@ -1,0 +1,9 @@
+{
+  "name": "Sam Shin",
+  "short_name": "Sam",
+  "theme_color": "#3b82f6",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
