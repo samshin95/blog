@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import navbar from "../components/navbar";
 import { Footers } from "../components/Footers";
 import { Hero } from "../components/Hero";
 import { TutorialList } from "../components/TutorialList";
@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
         <meta property="og:title" content="SamShin" />
         <meta property="og:description" content="Sam Shin 辛" />
       </Head>
-      <Header />
+      <navbar />
       <ScrollToTopButton />
       <Hero />
       <TutorialList />
@@ -71,7 +71,7 @@ export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData();
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["header", "footer"])),
+      ...(await serverSideTranslations(locale, ["navbar", "footer"])),
       allPostsData,
     },
   };

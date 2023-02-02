@@ -1,8 +1,8 @@
-import Header from "../../components/Header";
+import navbar from "../../components/navbar";
 export default function resource() {
   return (
     <>
-      <Header />
+      <navbar />
     </>
   );
 }
