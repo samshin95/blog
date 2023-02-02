@@ -1,13 +1,10 @@
-import navbar from "../../components/navbar";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
-import { Footers } from "../../components/Footers";
 
 export default function Post({ postData }) {
   return (
     <>
-      <navbar />
       <div className="flex justify-center">
         <div className="py-20 md:py-32">
           <Head>
@@ -25,7 +22,6 @@ export default function Post({ postData }) {
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
       </div>
-      <Footers />
     </>
   );
 }

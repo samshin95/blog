@@ -1,11 +1,9 @@
-import navbar from "../components/navbar";
 import Lottie from "lottie-react";
 import animationData from "../components/Hero/77620-404-website-error-animation.json";
 import Link from "next/link";
 export default function Custom404() {
   return (
     <>
-      <navbar />
       <div className="py-20 md:py-32">
         <section className="container md:flex mx-auto">
           <div className="w-full mt-10 md:w-1/2">

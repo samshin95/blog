@@ -1,9 +1,7 @@
-import navbar from "../../components/navbar";
 import Image from "next/image";
 export default function about() {
   return (
     <>
-      <navbar />
       <div className="py-20 md:py-32">
         <section className="container md:flex mx-auto">
           <div

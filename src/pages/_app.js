@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
+import Navbar from "../components/navbar";
+import { Footers } from "../components/Footers";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -73,7 +75,9 @@ function MyApp({ Component, pageProps }) {
           content="https://samshin95.com/images/icons8-gear-64.png"
         />
       </Head>
+      <Navbar />
       <Component {...pageProps} />
+      <Footers />
     </>
   );
 }

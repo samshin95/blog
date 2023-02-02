@@ -1,8 +1,5 @@
-import navbar from "../components/navbar";
-import { Footers } from "../components/Footers";
 import { Hero } from "../components/Hero";
 import { TutorialList } from "../components/TutorialList";
-import { RecentPosts } from "../components/RecentPosts";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Dateview from "../components/date";
@@ -38,7 +35,6 @@ export default function Home({ allPostsData }) {
         <meta property="og:title" content="SamShin" />
         <meta property="og:description" content="Sam Shin 辛" />
       </Head>
-      <navbar />
       <ScrollToTopButton />
       <Hero />
       <TutorialList />
@@ -62,7 +58,6 @@ export default function Home({ allPostsData }) {
           </li>
         ))}
       </ul>
-      <Footers />
     </>
   );
 }
@@ -76,12 +71,3 @@ export async function getStaticProps({ locale }) {
     },
   };
 }
-
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData();
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   };
-// }
