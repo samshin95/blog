@@ -1,5 +1,3 @@
-import Lottie from "lottie-react";
-import animationData from "./Hero/54639-boy-studying-science.json";
 import Swiper1 from "./Swiper";
 import Link from "next/link";
 export function Hero() {
