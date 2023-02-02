@@ -101,7 +101,7 @@ export function Footers() {
               ></path>
             </svg>
           </a>
-          <a href="https://github.com/samshin95/blog" className="text-gray-600">
+          <a href="https://github.com/samshin95" className="text-gray-600">
             <svg
               aria-hidden="true"
               focusable="false"
