@@ -1,10 +1,8 @@
-// import Layout from "../../components/layout";
 import Header from "../../components/Header";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
 import { Footers } from "../../components/Footers";
-// import { Sidebar } from "../../components/sidebar";
 
 export default function Post({ postData }) {
   // console.log(postData.contentHtml);
@@ -13,8 +11,6 @@ export default function Post({ postData }) {
     <>
       <Header />
       <div className="flex justify-center">
-        {/* <Sidebar /> */}
-
         <div className="py-20 md:py-32">
           <Head>
             <title>{postData.title}</title>
