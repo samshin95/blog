@@ -1,4 +1,3 @@
-import { Hero } from "../components/Hero";
 import { TutorialList } from "../components/TutorialList";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
@@ -9,11 +8,15 @@ import Cookies from "universal-cookie";
 import { ScrollToTopButton } from "../components/Features";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import dynamic from "next/dynamic";
 
 new Date();
 const cookies = new Cookies();
 
-// cookies.set("visittoday", "yes", { path: "/", expires: Date.now });
+const DynamicHero = dynamic(() =>
+  import("../components/Hero").then((mod) => mod.Hero)
+);
+
 if (cookies.get("visiter") > 0) {
   cookies.set("visiter", 1 + parseInt(cookies.get("visiter")));
   oldvisit(cookies.get("visiter"));
@@ -36,10 +39,8 @@ export default function Home({ allPostsData }) {
         <meta property="og:description" content="Sam Shin 辛" />
       </Head>
       <ScrollToTopButton />
-      <Hero />
       <TutorialList />
-      {/* <RecentPosts /> */}
-      {/* <Topics /> */}
+      <DynamicHero />
       <div className="text-center pt-24 pb-16 text-gray-600">
         <h2 id="recentpost" className="text-5xl md:text-6xl">
           最新文章

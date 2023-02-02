@@ -2,7 +2,12 @@ import "../styles/globals.css";
 import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
 import Navbar from "../components/navbar";
-import { Footers } from "../components/Footers";
+import dynamic from "next/dynamic";
+
+const DynamicFooters = dynamic(() =>
+  import("../components/Footers").then((mod) => mod.Footers)
+);
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -77,7 +82,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      <Footers />
+      <DynamicFooters />
     </>
   );
 }
