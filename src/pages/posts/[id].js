@@ -5,8 +5,6 @@ import Date from "../../components/date";
 import { Footers } from "../../components/Footers";
 
 export default function Post({ postData }) {
-  // console.log(postData.contentHtml);
-  // console.log(postData.contentHtml.match(/<strong>(.*?)<\/strong>/));
   return (
     <>
       <Header />
