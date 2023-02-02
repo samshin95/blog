@@ -4,7 +4,7 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
 import { Footers } from "../../components/Footers";
-import { Sidebar } from "../../components/sidebar";
+// import { Sidebar } from "../../components/sidebar";
 
 export default function Post({ postData }) {
   // console.log(postData.contentHtml);
