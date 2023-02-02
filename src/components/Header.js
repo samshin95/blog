@@ -299,7 +299,7 @@ export default function Header() {
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             <a
                               key={t("related resources")}
-                              href="/"
+                              href="/more/resource"
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <PuzzlePieceIcon
@@ -317,7 +317,7 @@ export default function Header() {
                             </a>
                             <a
                               key={t("about")}
-                              href="/"
+                              href="/more/about"
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <UserCircleIcon
