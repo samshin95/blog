@@ -3,42 +3,19 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Dateview from "../components/date";
 import { useRouter } from "next/router";
-import { firstvisit, oldvisit } from "../components/Visitors";
-import Cookies from "universal-cookie";
-import { ScrollToTopButton } from "../components/Features";
-import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import dynamic from "next/dynamic";
 
 new Date();
-const cookies = new Cookies();
 
 const DynamicHero = dynamic(() =>
   import("../components/Hero").then((mod) => mod.Hero)
 );
 
-if (cookies.get("visiter") > 0) {
-  cookies.set("visiter", 1 + parseInt(cookies.get("visiter")));
-  oldvisit(cookies.get("visiter"));
-} else {
-  cookies.set("visiter", 1);
-  firstvisit();
-}
-
 export default function Home({ allPostsData }) {
   const router = useRouter();
   return (
     <>
-      <Head>
-        <title>SamShin</title>
-        <meta name="description" content="Sam Shin 辛" />
-        <meta property="og:url" content="http://localhost:3000/" />
-        <meta property="og:site_name" content="SamShin" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="SamShin" />
-        <meta property="og:description" content="Sam Shin 辛" />
-      </Head>
-      <ScrollToTopButton />
       <TutorialList />
       <DynamicHero />
       <div className="text-center pt-24 pb-16 text-gray-600">

@@ -3,12 +3,31 @@ import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
+import Cookies from "universal-cookie";
+import { firstvisit, oldvisit } from "../components/Visitors";
+import { ScrollToTopButton } from "../components/Features";
+import { useRouter } from "next/router";
 
 const DynamicFooters = dynamic(() =>
   import("../components/Footers").then((mod) => mod.Footers)
 );
 
+const cookies = new Cookies();
+
+const DynamicHero = dynamic(() =>
+  import("../components/Hero").then((mod) => mod.Hero)
+);
+
+if (cookies.get("visiter") > 0) {
+  cookies.set("visiter", 1 + parseInt(cookies.get("visiter")));
+  oldvisit(cookies.get("visiter"));
+} else {
+  cookies.set("visiter", 1);
+  firstvisit();
+}
+
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -19,7 +38,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="The blog of Sam Shin" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* <meta name="msapplication-config" content="/icons/browserconfig.xml" /> */}
         <meta name="msapplication-TileColor" content="#3b82f6" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#3b82f6" />
@@ -62,26 +80,27 @@ function MyApp({ Component, pageProps }) {
         />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:url" content="https://samshin95.com" />
+        <meta name="twitter:url" content="https://samshin95.net" />
         <meta name="twitter:title" content="Sam Shin" />
         <meta name="twitter:description" content="Blog of Sam Shin" />
         <meta
           name="twitter:image"
-          content="https://samshin95.com/images/icons8-gear-64.png"
+          content="https://samshin95.net/images/icons8-gear-64.png"
         />
         <meta name="twitter:creator" content="@DavidWShadow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Sam Shin" />
         <meta property="og:description" content="Blog of Sam Shin" />
         <meta property="og:site_name" content="Sam Shin" />
-        <meta property="og:url" content="https://samshin95.com" />
+        <meta property="og:url" content="https://samshin95.net" />
         <meta
           property="og:image"
-          content="https://samshin95.com/images/icons8-gear-64.png"
+          content="https://samshin95.net/images/icons8-gear-64.png"
         />
       </Head>
       <Navbar />
       <Component {...pageProps} />
+      <ScrollToTopButton />
       <DynamicFooters />
     </>
   );

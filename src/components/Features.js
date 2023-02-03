@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function ScrollToTopButton() {
   return (
-    <Link className="fixed bottom-0 right-0 p-10" href="#Header">
+    <Link className="fixed bottom-0 right-0 p-10" href="#Top">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="w-6 h-6"

@@ -106,14 +106,14 @@ export function TutorialList() {
                 ></path>
               </svg>
               <div className="mx-auto">
-                <a
+                <Link
                   href="#"
                   className="inline-block py-4 px-10 rounded-md bg-primary hover:shadow-xl"
                 >
                   <span className="flex text-xl font-bold text-white">
                     <span>开始学习</span>
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
