@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 export default function about() {
   return (
     <>
@@ -30,23 +32,39 @@ export default function about() {
             <p className="font-semibold mb-5">Web Developer</p>
             <p>
               嗨！我是 <strong>Sam Shin</strong> <strong>辛旻軒</strong>
-              是一位軟體工程師。
+              現職是一位軟體工程師。
             </p>
+            <br />
             <p>
               興趣是寫出有趣的程式並與大家分享，希望有天能為世界做出一點貢獻!
             </p>
+            <br />
             <p>
               我目前在
-              <Link href={"https://atos.net/en/"}>Atos</Link>
+              <strong>
+                <Link href={"https://atos.net/en/"}>Atos</Link>
+              </strong>
               擔任Java Engineer，也是一名兼職的Freelancer
             </p>
-            <p>本網站二月剛架好，所以還有許多內容尚未補上，請大家見諒~</p>
+            <br />
+            <p>
+              本網站於<strong>2023/02/01</strong>
+              始動，所以還有許多內容尚未補上，請大家見諒~
+            </p>
             <button className="bg-black rounded-md py-3 px-7 mt-6 text-white">
-              聯繫我
+              <Link href={"mailto:lonewanderer@samshin95.com"}>聯繫我</Link>
             </button>
           </div>
         </div>
       </div>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["navbar", "footer"])),
+    },
+  };
 }

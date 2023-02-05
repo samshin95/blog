@@ -1,6 +1,8 @@
 import Lottie from "lottie-react";
 import animationData from "../components/Hero/77620-404-website-error-animation.json";
 import Link from "next/link";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 export default function Custom404() {
   return (
     <>
@@ -54,4 +56,11 @@ export default function Custom404() {
       </div>
     </>
   );
+}
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["navbar", "footer"])),
+    },
+  };
 }

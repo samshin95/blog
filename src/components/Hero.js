@@ -9,9 +9,9 @@ export function Hero() {
         </div>
         <div className="w-full mt-10 md:w-1/2">
           <h2 className="text-6xl text-center leading-normal md:leading-relaxed md:text-[4rem] lg:text-[5rem]">
-            <span>SEO Marketing</span>
+            <span>SEO、Marketing</span>
             <span className="relative inline-block overflow-visible">
-              <span className="font-black z-10 relative">分享、幹</span>
+              <span className="font-black z-10 relative">Design Pattern</span>
               <svg
                 className="text-primary absolute -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 h-[calc(100%)] w-[calc(100%+2rem)]"
                 xmlns="http://www.w3.org/2000/svg"

@@ -12,19 +12,28 @@ const DynamicFooters = dynamic(() =>
   import("../components/Footers").then((mod) => mod.Footers)
 );
 
+const date = new Date();
 const cookies = new Cookies();
 
-const DynamicHero = dynamic(() =>
-  import("../components/Hero").then((mod) => mod.Hero)
-);
-
-if (cookies.get("visiter") > 0) {
-  cookies.set("visiter", 1 + parseInt(cookies.get("visiter")));
-  oldvisit(cookies.get("visiter"));
+if (cookies.get("todayVisit") == "yes") {
 } else {
-  cookies.set("visiter", 1);
-  firstvisit();
 }
+
+if (cookies.get("todayVisit") == date.getDate()) {
+  oldvisit(cookies.get("visiter"));
+} else if (cookies.get("todayVisit") == date.getDate()) {
+  cookies.set("todayVisit", date.getDate());
+  firstvisit();
+} else {
+}
+
+// if (cookies.get("visiter") > 0) {
+//   cookies.set("visiter", 1 + parseInt(cookies.get("visiter")));
+//   oldvisit(cookies.get("visiter"));
+// } else {
+//   cookies.set("visiter", 1);
+//   firstvisit();
+// }
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
