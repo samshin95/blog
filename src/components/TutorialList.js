@@ -5,21 +5,17 @@ export function TutorialList() {
     <>
       <div className="text-center py-5 text-gray-600">
         <h2 id="tutorial-hero11" className="text-5xl md:text-6xl">
-          技术教程
+          技術分享
         </h2>
-        <p className="text-xl p-5">
-          专注于某项技术的系统性课程，从零开始，深入简出。
-        </p>
+        <p className="text-xl p-5">專注於特定技術的分享與研究</p>
       </div>
 
       <section className="text-center">
         <div className="flex flex-col max-w-6xl mx-auto justify-center px-4 md:space-x-8 md:flex-row ">
           <div className="shadow-lg my-8 py-8 px-4 rounded-lg md:w-1/3">
             <div className="flex flex-col text-gray-600 px-4 space-y-8">
-              <h3 className="text-5xl font-semibold">Win32</h3>
-              <p className="text-xl">
-                Windows 系统的核心操作接口，独领风骚二十年。
-              </p>
+              <h3 className="text-5xl font-semibold">Windows</h3>
+              <p className="text-xl">最大眾的核心系統，win11隆重登場。</p>
               <svg
                 className="h-36 mx-auto text-primary"
                 aria-hidden="true"
@@ -42,7 +38,7 @@ export function TutorialList() {
                   className="inline-block py-4 px-10 rounded-md bg-primary hover:shadow-xl"
                 >
                   <span className="flex text-xl font-bold text-white ">
-                    <span>开始学习</span>
+                    <span>由此開始</span>
                   </span>
                 </Link>
               </div>
@@ -53,7 +49,7 @@ export function TutorialList() {
             <div className="flex flex-col text-gray-600 px-4 space-y-8">
               <h3 className="text-5xl font-semibold">SDL2</h3>
               <p className="text-xl">
-                开源的多媒体跨平台开发库，纯 C 接口，易于上手。
+                開源的多媒體跨平台開發庫，純 C 接口，易於上手。
               </p>
               <svg
                 className="h-36 mx-auto text-primary"
@@ -77,7 +73,7 @@ export function TutorialList() {
                   className="inline-block py-4 px-10 rounded-md bg-primary hover:shadow-xl"
                 >
                   <span className="flex text-xl font-bold text-white">
-                    <span>开始学习</span>
+                    <span>由此開始</span>
                   </span>
                 </Link>
               </div>
@@ -88,7 +84,7 @@ export function TutorialList() {
             <div className="flex flex-col text-gray-600 px-4 space-y-8">
               <h3 className="text-5xl font-semibold">CSS</h3>
               <p className="text-xl">
-                前端学习的必备知识，控制网站样式的专用语言。
+                網頁設計師的必備知識，控製網站樣式的專用語言。
               </p>
               <svg
                 className="h-36 mx-auto text-primary"
@@ -111,7 +107,7 @@ export function TutorialList() {
                   className="inline-block py-4 px-10 rounded-md bg-primary hover:shadow-xl"
                 >
                   <span className="flex text-xl font-bold text-white">
-                    <span>开始学习</span>
+                    <span>由此開始</span>
                   </span>
                 </Link>
               </div>

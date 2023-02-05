@@ -16,8 +16,8 @@ export default function Home({ allPostsData }) {
   const router = useRouter();
   return (
     <>
-      <TutorialList />
       <DynamicHero />
+      <TutorialList />
       <div className="text-center pt-24 pb-16 text-gray-600">
         <h2 id="recentpost" className="text-5xl md:text-6xl">
           最新文章
