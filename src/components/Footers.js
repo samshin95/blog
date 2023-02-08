@@ -187,11 +187,14 @@ export function Footers() {
               友站連結
             </h6>
             <p className="mb-4">
-              <Link href="#!" className="text-gray-600">
-                Pricing
+              <Link
+                href="https://www.dac-abrasives.com/"
+                className="text-gray-600"
+              >
+                DAC
               </Link>
             </p>
-            <p className="mb-4">
+            {/* <p className="mb-4">
               <Link href="#!" className="text-gray-600">
                 Settings
               </Link>
@@ -205,7 +208,7 @@ export function Footers() {
               <Link href="#!" className="text-gray-600">
                 Help
               </Link>
-            </p>
+            </p> */}
           </div>
           <div>
             <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">

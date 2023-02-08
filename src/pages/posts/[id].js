@@ -14,12 +14,15 @@ export default function Post({ postData }) {
             {postData.title}
           </div>
           <br />
-          <div className="text-xl tracking-widest dark:text-gray-400">
+          <div className="text-3xl tracking-widest dark:text-gray-400">
             <Date dateISO={postData.date} />
           </div>
 
           <br />
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <div
+            className="text-xl tracking-widest dark:text-gray-400"
+            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+          />
         </div>
       </div>
     </>

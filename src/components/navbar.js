@@ -68,39 +68,7 @@ const solutions = [
     icon: ArrowPathIcon,
   },
 ];
-const callsToAction = [
-  { name: "Watch Demo", href: "#", icon: PlayIcon },
-  { name: "Contact Sales", href: "#", icon: PhoneIcon },
-];
-const resources = [
-  {
-    name: "Help Center",
-    description:
-      "Get all of your questions answered in our forums or contact support.",
-    href: "#",
-    icon: LifebuoyIcon,
-  },
-  {
-    name: "Guides",
-    description:
-      "Learn how to maximize our platform to get the most out of it.",
-    href: "#",
-    icon: BookmarkSquareIcon,
-  },
-  {
-    name: "Events",
-    description:
-      "See what meet-ups and other events we might be planning near you.",
-    href: "#",
-    icon: CalendarIcon,
-  },
-  {
-    name: "Security",
-    description: "Understand how we take your privacy seriously.",
-    href: "#",
-    icon: ShieldCheckIcon,
-  },
-];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -168,7 +136,7 @@ export default function navbar() {
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             <Link
                               key={t("Vue Cli")}
-                              href="/"
+                              href="/construct"
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <Image
@@ -190,7 +158,7 @@ export default function navbar() {
 
                             <Link
                               key={t("NEXT.js")}
-                              href="/"
+                              href="/construct"
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <Image

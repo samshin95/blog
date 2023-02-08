@@ -33,7 +33,7 @@ export function TutorialList() {
               </svg>
               <div className="mx-auto">
                 <Link
-                  href="/windows-bian-cheng-kai-fa"
+                  href="/construct"
                   passHref
                   className="inline-block py-4 px-10 rounded-md bg-primary hover:shadow-xl"
                 >
@@ -68,7 +68,7 @@ export function TutorialList() {
               </svg>
               <div className="mx-auto">
                 <Link
-                  href="/sdl2-you-xi-kai-fa-zui-xiao-zhi-shi-zhan"
+                  href="/construct"
                   passHref
                   className="inline-block py-4 px-10 rounded-md bg-primary hover:shadow-xl"
                 >
@@ -103,7 +103,7 @@ export function TutorialList() {
               </svg>
               <div className="mx-auto">
                 <Link
-                  href="#"
+                  href="/construct"
                   className="inline-block py-4 px-10 rounded-md bg-primary hover:shadow-xl"
                 >
                   <span className="flex text-xl font-bold text-white">
