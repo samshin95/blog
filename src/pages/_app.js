@@ -20,11 +20,13 @@ if (cookies.get("todayVisit") == "yes") {
 }
 
 if (cookies.get("todayVisit") == date.getDate()) {
-  oldvisit(cookies.get("visiter"));
-} else if (cookies.get("todayVisit") == date.getDate()) {
+} else if (cookies.get("todayVisit") == undefined) {
+  console.log(cookies.get("todayVisit"));
   cookies.set("todayVisit", date.getDate());
   firstvisit();
 } else {
+  oldvisit(cookies.get("visiter"));
+  cookies.set("todayVisit", date.getDate());
 }
 
 // if (cookies.get("visiter") > 0) {
